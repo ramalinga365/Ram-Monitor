@@ -59,7 +59,7 @@ class Bark extends NotificationProvider {
             params += "&group=" + notification.barkGroup;
         } else {
             // default name
-            params += "&group=" + "UptimeKuma";
+            params += "&group=" + "RamMonitor";
         }
         // picked a sound, this should follow system's mute status when arrival
         if (notification.barkSound != null) {
