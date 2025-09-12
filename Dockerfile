@@ -1,17 +1,29 @@
-# Use Node.js LTS
-FROM node:18-alpine
+# ---------- Build Stage ----------
+FROM node:18-alpine AS build
 
 # Set working directory
 WORKDIR /app
 
-# Copy package files first
+# Copy package files
 COPY package*.json ./
 
 # Install dependencies (ignore peer dep conflicts)
-RUN npm install --omit=dev --legacy-peer-deps
+RUN npm install --legacy-peer-deps
 
-# Copy the rest of the code
+# Copy the rest of the source code
 COPY . .
+
+# Build (Uptime Kuma has frontend build step)
+RUN npm run build
+
+# ---------- Runtime Stage ----------
+FROM node:18-alpine AS runtime
+
+# Set working directory
+WORKDIR /app
+
+# Copy only what we need from build stage
+COPY --from=build /app . 
 
 # Declare volume for persistent data
 VOLUME ["/app/data"]
@@ -21,3 +33,4 @@ EXPOSE 3001
 
 # Default command
 CMD ["node", "server/server.js"]
+
