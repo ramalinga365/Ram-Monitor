@@ -7,8 +7,8 @@ WORKDIR /app
 # Copy package files first
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install --production
+# Install dependencies (ignore peer dep conflicts)
+RUN npm install --omit=dev --legacy-peer-deps
 
 # Copy the rest of the code
 COPY . .
