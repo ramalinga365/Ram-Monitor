@@ -51,9 +51,9 @@ to review the appropriate one for your contribution.
   parts like the documentation.
   [**PLEASE SEE OUR SECURITY POLICY.**](SECURITY.md)
 
-  [advisory]: https://github.com/louislam/uptime-kuma/security/advisories/new
+  [advisory]: https://github.com/ramalinga365/Ram-Monitor/security/advisories/new
   [issue]:
-    https://github.com/louislam/uptime-kuma/issues/new?template=security_issue.yml
+    https://github.com/ramalinga365/Ram-Monitor/issues/new?template=security_issue.yml
 
   </p>
   </details>
@@ -80,7 +80,7 @@ to review the appropriate one for your contribution.
   We use weblate to localise this project into many languages. If you are
   unhappy with a translation this is the best start. On how to translate using
   weblate, please see
-  [these instructions](https://github.com/louislam/uptime-kuma/blob/master/src/lang/README.md).
+  [these instructions](https://github.com/ramalinga365/Ram-Monitor/blob/master/src/lang/README.md).
 
   There are two cases in which a change cannot be done in weblate and requires a
   PR:
@@ -90,7 +90,7 @@ to review the appropriate one for your contribution.
   - language keys need to be **added to `en.json`** to be visible in weblate. If
     this has not happened, a PR is appreciated.
   - **Adding a new language** requires a new file see
-    [these instructions](https://github.com/louislam/uptime-kuma/blob/master/src/lang/README.md)
+    [these instructions](https://github.com/ramalinga365/Ram-Monitor/blob/master/src/lang/README.md)
 
   <sub>Because maintainer time is precious, junior maintainers may merge
   uncontroversial PRs in this area.</sub>
@@ -226,7 +226,7 @@ to review the appropriate one for your contribution.
 
   1. **Fork** the [Uptime-Kuma repository].
 
-  [Uptime-Kuma repository]: https://github.com/louislam/uptime-kuma/
+  [Uptime-Kuma repository]: https://github.com/ramalinga365/Ram-Monitor/
 
   2. **Clone** your forked repository to your local machine.
   3. **Create a new branch** for your changes (e.g.,
@@ -241,7 +241,7 @@ to review the appropriate one for your contribution.
   5. **Push** your branch to your forked repository.
   6. **Open a pull request** using this link: [Compare & Pull Request].
 
-  [Compare & Pull Request]: https://github.com/louislam/uptime-kuma/compare/
+  [Compare & Pull Request]: https://github.com/ramalinga365/Ram-Monitor/compare/
 
   7. **Select the correct source and target branches**.
   8. **Link to related issues** for context.
@@ -342,7 +342,7 @@ you spent on it. Therefore, it is essential to have a discussion beforehand.
 I will assign your pull request to a [milestone], if I plan to review and merge
 it.
 
-[milestone]: https://github.com/louislam/uptime-kuma/milestones
+[milestone]: https://github.com/ramalinga365/Ram-Monitor/milestones
 
 Please don't rush or ask for an ETA. We have to understand the pull request,
 make sure it has no breaking changes and stick to the vision of this project,
@@ -573,7 +573,7 @@ The data and socket logic are in `src/mixins/socket.js`.
 
 ## Database Migration
 
-See: <https://github.com/louislam/uptime-kuma/tree/master/db/knex_migrations>
+See: <https://github.com/ramalinga365/Ram-Monitor/tree/master/db/knex_migrations>
 
 ## Unit Test
 
@@ -619,7 +619,7 @@ If you want to help by translating Ram Monitor into your language, please visit
 the [instructions on how to translate using weblate].
 
 [instructions on how to translate using weblate]:
-  https://github.com/louislam/uptime-kuma/blob/master/src/lang/README.md
+  https://github.com/ramalinga365/Ram-Monitor/blob/master/src/lang/README.md
 
 ## Spelling & Grammar
 
@@ -631,7 +631,7 @@ language is not English and my grammar is not that great.
 Since there is no way to make a pull request to the wiki, I have set up another
 repo to do that.
 
-<https://github.com/louislam/uptime-kuma-wiki>
+<https://github.com/ramalinga365/Ram-Monitor-wiki>
 
 ## Docker
 
@@ -672,7 +672,7 @@ repo to do that.
 ## Maintainer
 
 Check the latest issues and pull requests:
-<https://github.com/louislam/uptime-kuma/issues?q=sort%3Aupdated-desc>
+<https://github.com/ramalinga365/Ram-Monitor/issues?q=sort%3Aupdated-desc>
 
 ### What is a maintainer and what are their roles?
 
@@ -768,9 +768,9 @@ We have a few procedures we follow. These are documented here:
   **Setup Repo**
 
   ```bash
-  git clone https://github.com/louislam/uptime-kuma-wiki.git
+  git clone https://github.com/ramalinga365/Ram-Monitor-wiki.git
   cd uptime-kuma-wiki
-  git remote add production https://github.com/louislam/uptime-kuma.wiki.git
+  git remote add production https://github.com/ramalinga365/Ram-Monitor.wiki.git
   ```
 
   **Push to Production Wiki**
