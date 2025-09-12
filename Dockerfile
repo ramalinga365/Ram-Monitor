@@ -13,8 +13,11 @@ RUN npm install --production
 # Copy the rest of the code
 COPY . .
 
+# Declare volume for persistent data
+VOLUME ["/app/data"]
+
 # Expose port
 EXPOSE 3001
 
-# Default command (same as "node server/server.js")
+# Default command
 CMD ["node", "server/server.js"]
