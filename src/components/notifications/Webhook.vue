@@ -76,7 +76,7 @@ export default {
         customBodyPlaceholder() {
             return this.$t("Example:", [
 `{
-    "Title": "Ram Monito Alert{% if monitorJSON %} - {{ monitorJSON['name'] }}{% endif %}",
+    "Title": "Ram Monitor Alert{% if monitorJSON %} - {{ monitorJSON['name'] }}{% endif %}",
     "Body": "{{ msg }}"
 }`
             ]);

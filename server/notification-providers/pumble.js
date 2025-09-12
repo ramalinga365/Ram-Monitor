@@ -16,7 +16,7 @@ class Pumble extends NotificationProvider {
                 let data = {
                     "attachments": [
                         {
-                            "title": "Ram Monito Alert",
+                            "title": "Ram Monitor Alert",
                             "text": msg,
                             "color": "#5BDD8B"
                         }

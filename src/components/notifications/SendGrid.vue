@@ -40,7 +40,7 @@ export default {
     },
     mounted() {
         if (typeof this.$parent.notification.sendgridSubject === "undefined") {
-            this.$parent.notification.sendgridSubject = "Notification from Your Ram Monito";
+            this.$parent.notification.sendgridSubject = "Notification from Your Ram Monitor";
         }
     },
 };

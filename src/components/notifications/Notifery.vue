@@ -18,7 +18,7 @@
             v-model="$parent.notification.notiferyTitle"
             type="text"
             class="form-control"
-            placeholder="Ram Monito Alert"
+            placeholder="Ram Monitor Alert"
         />
     </div>
 

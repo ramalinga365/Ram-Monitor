@@ -28,10 +28,10 @@
             <pre>domain: notify
 service: mobile_app_my_phone # change to your device name
 service_data:
-  title: Ram Monito
+  title: Ram Monitor
   data:
     status: 0 # 0=down 1=up
-    # name: Optional Ram Monito Monitor Name to filter by</pre>
+    # name: Optional Ram Monitor Monitor Name to filter by</pre>
             <p>
                 {{ $t("Then choose an action, for example switch the scene to where an RGB light is red.") }}
             </p>

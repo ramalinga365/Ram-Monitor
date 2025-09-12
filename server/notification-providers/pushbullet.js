@@ -23,7 +23,7 @@ class Pushbullet extends NotificationProvider {
             if (heartbeatJSON == null) {
                 let data = {
                     "type": "note",
-                    "title": "Ram Monito Alert",
+                    "title": "Ram Monitor Alert",
                     "body": msg,
                 };
                 await axios.post(url, data, config);

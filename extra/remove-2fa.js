@@ -1,4 +1,4 @@
-console.log("== Ram Monito Remove 2FA Tool ==");
+console.log("== Ram Monitor Remove 2FA Tool ==");
 console.log("Loading the database");
 
 const Database = require("../server/database");

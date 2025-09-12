@@ -28,7 +28,7 @@ export const isNode = typeof process !== "undefined" && process?.versions?.node;
  */
 const dayjs = (isNode) ? require("dayjs") : dayjsFrontend;
 
-export const appName = "Ram Monito";
+export const appName = "Ram Monitor";
 export const DOWN = 0;
 export const UP = 1;
 export const PENDING = 2;

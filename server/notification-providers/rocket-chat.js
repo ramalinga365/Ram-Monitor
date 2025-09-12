@@ -26,13 +26,13 @@ class RocketChat extends NotificationProvider {
             }
 
             let data = {
-                "text": "Ram Monito Alert",
+                "text": "Ram Monitor Alert",
                 "channel": notification.rocketchannel,
                 "username": notification.rocketusername,
                 "icon_emoji": notification.rocketiconemo,
                 "attachments": [
                     {
-                        "title": `Ram Monito Alert *Time (${heartbeatJSON["timezone"]})*\n${heartbeatJSON["localDateTime"]}`,
+                        "title": `Ram Monitor Alert *Time (${heartbeatJSON["timezone"]})*\n${heartbeatJSON["localDateTime"]}`,
                         "text": "*Message*\n" + msg,
                     }
                 ]

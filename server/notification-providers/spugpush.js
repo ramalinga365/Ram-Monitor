@@ -13,7 +13,7 @@ class SpugPush extends NotificationProvider {
         let okMsg = "Sent Successfully.";
         try {
             let formData = {
-                title: "Ram Monito Message",
+                title: "Ram Monitor Message",
                 content: msg
             };
             if (heartbeatJSON) {

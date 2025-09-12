@@ -13,7 +13,7 @@ class FlashDuty extends NotificationProvider {
     async send(notification, msg, monitorJSON = null, heartbeatJSON = null) {
         try {
             if (heartbeatJSON == null) {
-                const title = "Ram Monito Alert";
+                const title = "Ram Monitor Alert";
                 const monitor = {
                     type: "ping",
                     url: msg,
@@ -23,13 +23,13 @@ class FlashDuty extends NotificationProvider {
             }
 
             if (heartbeatJSON.status === UP) {
-                const title = "Ram Monito Monitor ✅ Up";
+                const title = "Ram Monitor Monitor ✅ Up";
 
                 return this.postNotification(notification, title, heartbeatJSON.msg, monitorJSON, "Ok");
             }
 
             if (heartbeatJSON.status === DOWN) {
-                const title = "Ram Monito Monitor 🔴 Down";
+                const title = "Ram Monitor Monitor 🔴 Down";
                 return this.postNotification(notification, title, heartbeatJSON.msg, monitorJSON, notification.flashdutySeverity);
             }
         } catch (error) {
@@ -86,7 +86,7 @@ class FlashDuty extends NotificationProvider {
 
         const baseURL = await setting("primaryBaseURL");
         if (baseURL && monitorInfo) {
-            options.client = "Ram Monito";
+            options.client = "Ram Monitor";
             options.client_url = baseURL + getMonitorRelativeURL(monitorInfo.id);
         }
 

@@ -13,7 +13,7 @@ class SevenIO extends NotificationProvider {
 
         const data = {
             to: notification.sevenioTo,
-            from: notification.sevenioSender || "Ram Monito",
+            from: notification.sevenioSender || "Ram Monitor",
             text: msg,
         };
 

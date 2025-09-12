@@ -59,7 +59,7 @@ class Teams extends NotificationProvider {
         if (dashboardUrl) {
             actions.push({
                 "type": "Action.OpenUrl",
-                "title": "Visit Ram Monito",
+                "title": "Visit Ram Monitor",
                 "url": dashboardUrl
             });
         }
@@ -127,7 +127,7 @@ class Teams extends NotificationProvider {
                                                         "width": "32px",
                                                         "style": "Person",
                                                         "url": "https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/icon.png",
-                                                        "altText": "Ram Monito Logo"
+                                                        "altText": "Ram Monitor Logo"
                                                     }
                                                 ]
                                             },
@@ -145,7 +145,7 @@ class Teams extends NotificationProvider {
                                                         "type": "TextBlock",
                                                         "size": "Small",
                                                         "weight": "Default",
-                                                        "text": "Ram Monito Alert",
+                                                        "text": "Ram Monitor Alert",
                                                         "isSubtle": true,
                                                         "spacing": "None"
                                                     }

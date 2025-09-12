@@ -1,7 +1,7 @@
 import { test } from "@playwright/test";
 import { getSqliteDatabaseExists, login, screenshot, takeSqliteSnapshot } from "../util-test";
 
-test.describe("Ram Monito Setup", () => {
+test.describe("Ram Monitor Setup", () => {
 
     test.skip(() => getSqliteDatabaseExists(), "Must only run once per session");
 

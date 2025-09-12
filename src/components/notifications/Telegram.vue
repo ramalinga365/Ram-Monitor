@@ -119,7 +119,7 @@ export default {
         telegramTemplatedTextareaPlaceholder() {
             return this.$t("Example:", [
                 `
-Ram Monito Alert{% if monitorJSON %} - {{ monitorJSON['name'] }}{% endif %}
+Ram Monitor Alert{% if monitorJSON %} - {{ monitorJSON['name'] }}{% endif %}
 
 {{ msg }}
                 `,

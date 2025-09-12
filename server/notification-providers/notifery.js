@@ -14,7 +14,7 @@ class Notifery extends NotificationProvider {
         const url = "https://api.notifery.com/event";
 
         let data = {
-            title: notification.notiferyTitle || "Ram Monito Alert",
+            title: notification.notiferyTitle || "Ram Monitor Alert",
             message: msg,
         };
 

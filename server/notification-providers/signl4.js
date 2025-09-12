@@ -29,14 +29,14 @@ class SIGNL4 extends NotificationProvider {
 
             if (heartbeatJSON == null) {
                 // Test alert
-                data.title = "Ram Monito Alert";
+                data.title = "Ram Monitor Alert";
                 data.message = msg;
             } else if (heartbeatJSON.status === UP) {
-                data.title = "Ram Monito Monitor ✅ Up";
+                data.title = "Ram Monitor Monitor ✅ Up";
                 data["X-S4-ExternalID"] = "UptimeKuma-" + monitorJSON.monitorID;
                 data["X-S4-Status"] = "resolved";
             } else if (heartbeatJSON.status === DOWN) {
-                data.title = "Ram Monito Monitor 🔴 Down";
+                data.title = "Ram Monitor Monitor 🔴 Down";
                 data["X-S4-ExternalID"] = "UptimeKuma-" + monitorJSON.monitorID;
                 data["X-S4-Status"] = "new";
             }

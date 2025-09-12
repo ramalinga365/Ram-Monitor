@@ -13,21 +13,21 @@ class Splunk extends NotificationProvider {
     async send(notification, msg, monitorJSON = null, heartbeatJSON = null) {
         try {
             if (heartbeatJSON == null) {
-                const title = "Ram Monito Alert";
+                const title = "Ram Monitor Alert";
                 const monitor = {
                     type: "ping",
-                    url: "Ram Monito Test Button",
+                    url: "Ram Monitor Test Button",
                 };
                 return this.postNotification(notification, title, msg, monitor, "trigger");
             }
 
             if (heartbeatJSON.status === UP) {
-                const title = "Ram Monito Monitor ✅ Up";
+                const title = "Ram Monitor Monitor ✅ Up";
                 return this.postNotification(notification, title, heartbeatJSON.msg, monitorJSON, "recovery");
             }
 
             if (heartbeatJSON.status === DOWN) {
-                const title = "Ram Monito Monitor 🔴 Down";
+                const title = "Ram Monitor Monitor 🔴 Down";
                 return this.postNotification(notification, title, heartbeatJSON.msg, monitorJSON, "trigger");
             }
         } catch (error) {
@@ -89,15 +89,15 @@ class Splunk extends NotificationProvider {
             data: {
                 message_type: eventAction,
                 state_message: `[${title}] [${monitorUrl}] ${body}`,
-                entity_display_name: "Ram Monito Alert: " + monitorInfo.name,
+                entity_display_name: "Ram Monitor Alert: " + monitorInfo.name,
                 routing_key: notification.pagerdutyIntegrationKey,
-                entity_id: "Ram Monito/" + monitorInfo.id,
+                entity_id: "Ram Monitor/" + monitorInfo.id,
             }
         };
 
         const baseURL = await setting("primaryBaseURL");
         if (baseURL && monitorInfo) {
-            options.client = "Ram Monito";
+            options.client = "Ram Monitor";
             options.client_url = baseURL + getMonitorRelativeURL(monitorInfo.id);
         }
 

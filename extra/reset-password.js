@@ -1,4 +1,4 @@
-console.log("== Ram Monito Reset Password Tool ==");
+console.log("== Ram Monitor Reset Password Tool ==");
 
 const Database = require("../server/database");
 const { R } = require("redbean-node");
@@ -128,7 +128,7 @@ function disconnectAllSocketClients(username, password) {
         });
 
         socket.on("connect_error", function () {
-            // The localWebSocketURL is not guaranteed to be working for some complicated Ram Monito setup
+            // The localWebSocketURL is not guaranteed to be working for some complicated Ram Monitor setup
             // Ask the user to restart the server manually
             console.warn("Failed to connect to " + localWebSocketURL);
             console.warn("Please restart the server to disconnect all sessions manually.");

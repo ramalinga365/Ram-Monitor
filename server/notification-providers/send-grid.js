@@ -41,7 +41,7 @@ class SendGrid extends NotificationProvider {
                 from: { email: notification.sendgridFromEmail.trim() },
                 subject:
           notification.sendgridSubject ||
-          "Notification from Your Ram Monito",
+          "Notification from Your Ram Monitor",
                 content: [
                     {
                         type: "text/plain",
