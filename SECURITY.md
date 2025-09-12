@@ -20,9 +20,9 @@ Advisories only. I will ignore all 3rd-party bug bounty platforms emails.
 
 ## Supported Versions
 
-### Uptime Kuma Versions
+### Ram Monito Versions
 
-You should use or upgrade to the latest version of Uptime Kuma. All `1.X.X`
+You should use or upgrade to the latest version of Ram Monito. All `1.X.X`
 versions are upgradable to the latest version.
 
 ### Upgradable Docker Tags

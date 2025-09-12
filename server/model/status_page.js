@@ -74,7 +74,7 @@ class StatusPage extends BeanModel {
         let host = `${proto}://${config.hostname || "localhost"}:${config.port}/status/${slug}`;
 
         const feed = new Feed({
-            title: "uptime kuma rss feed",
+            title: "Ram Monito rss feed",
             description: `current status: ${statusDescription}`,
             link: host,
             language: "en", // optional, used only in RSS 2.0, possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes

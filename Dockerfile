@@ -13,7 +13,7 @@ RUN npm install --legacy-peer-deps
 # Copy the rest of the source code
 COPY . .
 
-# Build (Uptime Kuma has frontend build step)
+# Build (Ram Monito has frontend build step)
 RUN npm run build
 
 # ---------- Runtime Stage ----------
