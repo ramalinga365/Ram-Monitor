@@ -27,11 +27,14 @@ jobs:
 
       - name: Build Docker image
         run: |
-          IMAGE_NAME=ghcr.io/${{ github.repository }}/ram-monitor
-          docker build -t $IMAGE_NAME:latest .
+          REPO_LC=$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')
+          IMAGE_NAME=ghcr.io/$REPO_LC/ram-monitor
+          docker build -t $IMAGE_NAME:latest -f Dockerfile .
 
       - name: Push Docker image
         run: |
-          IMAGE_NAME=ghcr.io/${{ github.repository }}/ram-monitor
+          REPO_LC=$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')
+          IMAGE_NAME=ghcr.io/$REPO_LC/ram-monitor
           docker push $IMAGE_NAME:latest
+
 
